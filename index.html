@@ -13,7 +13,10 @@
   <body>
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="#" class="nav__logo">Francisco</a>
+        <a href="#" class="nav__logo">
+          Francisco
+          <i class="uil uil-arrow header__title-icon"></i>
+        </a>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
             <li class="nav_item">
@@ -23,7 +26,7 @@
             </li>
             <li class="nav_item">
               <a href="#about" class="nav__link">
-                <i class="uil uil-user nav__icon"></i>Sobre mi
+                <i class="uil uil-user nav__icon"></i>Sobre mí
               </a>
             </li>
             <li class="nav_item">
@@ -42,7 +45,7 @@
               </a>
             </li>
             <li class="nav_item">
-              <a href="#contactme" class="nav__link">
+              <a href="#contact" class="nav__link">
                 <i class="uil uil-message nav__icon"></i>Contáctame
               </a>
             </li>
@@ -57,7 +60,11 @@
       </nav>
     </header>
 
+    
     <main class="main">
+      <figure class="to__top">
+        <i class="uil uil-arrow-up to__top-icon"></i>
+      </figure>
 
       <section class="home section" id="home">
         <div class="home__container container grid">
@@ -112,7 +119,7 @@
       </section>
 
       <section class="about section" id="about">
-        <h2 class="section__title">Sobre mi</h2>
+        <h2 class="section__title">Sobre mí</h2>
         <span class="section__subtitle">Mi introducción</span>
         <div class="about__container container grid">
           <img
@@ -129,8 +136,7 @@
             <div class="about__info">
               <div>
                 <span class="about__info-title">6</span>
-                <span class="about__info-name"
-                  >Meses <br />
+                <span class="about__info-name">Meses <br />
                   de experiencia</span
                 >
               </div>
@@ -180,7 +186,7 @@
 
                 <div>
                   <h1 class="skills__title">Desarrollo frontend</h1>
-                  <span class="skills__subtitle">Más de 3 años</span>
+                  <span class="skills__subtitle">Más de 1 años</span>
                 </div>
 
                 <i class="uil uil-angle-down skills__arrow"></i>
@@ -311,12 +317,6 @@
             <div class="qualification__content">
 
               <div class="qualification__data">
-                <div></div>
-
-              <div>
-                <span class="qualification__rounder"></span>
-                <span class="qualification__line"></span>
-              </div>
               
                 <div>
                   <h3 class="qualification__title">Estudiante Bachiller</h3>
@@ -331,12 +331,6 @@
             </div>
 
             <div class="qualification__data">
-              <div></div>
-
-              <div>
-                <span class="qualification__rounder"></span>
-                <span class="qualification__line"></span>
-              </div>
 
               <div>
                 <h3 class="qualification__title">Tec. Sistemas informáticos</h3>
@@ -475,7 +469,7 @@
 
       </section>
 
-      <section class="contact section" id="contactme">
+      <section class="contact section" id="contact">
         <h2 class="section__title">Contacto</h2>
         <span class="section__subtitle">Contáctame</span>
 
@@ -520,39 +514,52 @@
             <div class="contact__inputs grid">
 
               <div class="contact__content">
-                <label for="" class="contact__label">Nombre</label>
-                <input type="text" class="contact__input">
+                <label for="contact__input-name" class="contact__label">Nombre</label>
+                <input id="contact__input-name" type="text" class="contact__input">
               </div>
 
               <div class="contact__content">
-                <label for="" class="contact__label">Correo</label>
-                <input type="email" class="contact__input">
+                <label for="contact__input-email" class="contact__label">Correo</label>
+                <input  id="contact__input-email" type="email" class="contact__input">
               </div>
 
             </div>
 
             <div class="contact__content">
-              <label for="" class="contact__label">Proyecto</label>
-              <input type="text" class="contact__input">
+              <label for="contact__input-proyect" class="contact__label">Proyecto</label>
+              <input id="contact__input-proyect" type="text" class="contact__input">
             </div> 
 
             <div class="contact__content">
-             <label for="" class="contact__label">Mensaje</label>
-              <textarea class="contact__input" name="" id="" cols="30" rows="7"></textarea>
+             <label for="contact__input-message" class="contact__label">Mensaje</label>
+              <textarea id="contact__input-message" class="contact__input" name="" id="" cols="30" rows="7"></textarea>
             </div> 
 
             <div>
-              <a href="#" class="button button--flex">
+              <a href="#" class="button button--flex button__send-form">
                 Enviar
                 <i class="uil uil-message button__icon"></i>
               </a>
-            
             </div>
 
           </form>
         </div>
 
       </section>
+
+      <footer class="footer">
+        <div class="footer__bg">
+          <div class="footer__container container grid">
+            <div>
+              <h1 class="footer__title">
+                Francisco
+              </h1>
+              <span class="footer__subtitle">Desarrollador</span>
+            </div>
+          </div>
+        </div>
+        <p class="footer__copy">&#169;Todos los derechos reservados</p>
+      </footer>
 
     </main>
 

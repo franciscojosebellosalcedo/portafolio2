@@ -90,4 +90,19 @@ window.addEventListener("DOMContentLoaded", (e) => {
   listButtonArrow[0].addEventListener("click",()=>toggleProject(-1));
   listButtonArrow[1].addEventListener("click",()=>toggleProject(1));
 
+  const topTop=document.querySelector(".to__top");
+  
+  window.addEventListener("scroll",()=>{
+    let scrollHight = window.scrollY;
+    if (scrollHight > 500) {
+      topTop.classList.add("to_top_active");
+    } else {
+      topTop.classList.remove("to_top_active");
+    }
+    
+  })
+  topTop.addEventListener("click",()=>{
+    window.scrollTo(0,0);
+  })
+
 });
