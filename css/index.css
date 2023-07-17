@@ -763,26 +763,6 @@ img {
   }
 }
 
-@media screen and (max-width: 458px) {
-  .portfolio__slider {
-  }
-  .portfolio__container {
-  }
-  .portfolio__content {
-  }
-  /* .portfolio__img {
-    width: 80px;
-  } */
-
-  /*
-  .portfolio__title{
-    font-size: 15px;
-  }
-  .portfolio__description{
-    font-size: 11px;
-  } */
-}
-
 @media screen and (min-width: 768px) {
   .skills__container > div {
     display: flex;
