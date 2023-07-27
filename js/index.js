@@ -129,10 +129,10 @@ window.addEventListener("DOMContentLoaded", (e) => {
     for (let i = 0; i < listInputs.length; i++) {
       const input = listInputs[i];
       if (input.value === null || input.value === "" ) {
-        listContentInputs[i].style.border = "1px solid red";
+        listContentInputs[i].style.border = "2px solid red";
         aux++;
       }else if(regex.test(listInputs[1].value)===false){
-        listContentInputs[1].style.border= "1px solid red";
+        listContentInputs[1].style.border= "2px solid red";
         aux++;
       }
     }
@@ -169,6 +169,10 @@ window.addEventListener("DOMContentLoaded", (e) => {
       }else{
         textMessageModalSend.textContent="No enviado";
         modalSendEmail.classList.add("active-modal");
+      }
+      for (let z = 0; z < listInputs.length; z++) {
+        const input = listInputs[z];
+        input.value="";
       }
 
     }
