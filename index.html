@@ -526,39 +526,46 @@
 
           </div>
           
-          <form class="contact__form grid">
+          <form class="contact__form grid" id="form">
             <div class="contact__inputs grid">
 
               <div class="contact__content">
                 <label for="contact__input-name" class="contact__label">Nombre</label>
-                <input id="contact__input-name" type="text" class="contact__input">
+                <input id="name" name="name" type="text" class="contact__input input">
               </div>
 
               <div class="contact__content">
                 <label for="contact__input-email" class="contact__label">Correo</label>
-                <input  id="contact__input-email" type="email" class="contact__input">
+                <input  id="email" name="email" type="email" class="contact__input input">
               </div>
 
             </div>
 
             <div class="contact__content">
               <label for="contact__input-proyect" class="contact__label">Proyecto</label>
-              <input id="contact__input-proyect" type="text" class="contact__input">
+              <input id="project" name="project" type="text" class="contact__input input">
             </div> 
 
             <div class="contact__content">
              <label for="contact__input-message" class="contact__label">Mensaje</label>
-              <textarea id="contact__input-message" class="contact__input" name="" id="" cols="30" rows="7"></textarea>
+              <textarea id="message" class="contact__input input" name="message" id="" cols="30" rows="7"></textarea>
             </div> 
 
             <div>
-              <a href="#" class="button button--flex button__send-form">
+              <button  class="button button--flex button__send-form">
                 Enviar
                 <i class="uil uil-message button__icon"></i>
-              </a>
+              </button>
             </div>
 
           </form>
+        </div>
+
+        <div class="send__modal">
+          <div class="modal__send-email">
+            <i class="uil uil-times send__modal-close"></i>
+            <p class="message__modal-send-email"></p>
+          </div>
         </div>
 
       </section>
@@ -580,5 +587,10 @@
     </main>
 
     <script src="./js/index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script type="text/javascript"> 
+  emailjs.init('_yOP6dNF1dy9F4KYE')
+  </script>
   </body>
 </html>

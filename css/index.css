@@ -295,6 +295,9 @@ img {
 .home__description {
   margin-bottom: var(--mb-2);
 }
+.button{
+  cursor: pointer;
+}
 
 .home__scroll-button {
   color: var(--first-color);
@@ -513,6 +516,34 @@ img {
   transition: 0.3s;
   transform: translateX(0.25rem);
 }
+.send__modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  z-index: var(--z-modal);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.modal__send-email{
+  position: relative;
+  background-color: var(--container-color);
+  border-radius: 0.5rem;
+  width: 50%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
 .services__modal {
   position: fixed;
   top: 0;
@@ -539,7 +570,7 @@ img {
   border-radius: 0.5rem;
   padding: 1.5rem;
 }
-.services__modal-close {
+.services__modal-close,.send__modal-close {
   position: absolute;
   right: 1rem;
   top: 1rem;
@@ -729,7 +760,9 @@ img {
   text-align: center;
   color: var(--text-color-light);
 }
-
+.button__send-form{
+  border: none;
+}
 /*MEDIA QUERYS*/
 
 @media screen and (max-width: 320px) {
@@ -739,6 +772,10 @@ img {
 }
 
 @media screen and (max-width: 400px) {
+  .modal__send-email{
+    width: 60%;
+    height: 20%;
+  }
   .contact {
     margin: 0 auto;
     width: 90%;
@@ -779,6 +816,14 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .modal__send-email{
+    width: 60%;
+    height: 20%;
+  }
+  .modal__send-email{
+    width: 25%;
+    height: 25%;
+  }
   .skills__container > div {
     display: flex;
     justify-content: center;
